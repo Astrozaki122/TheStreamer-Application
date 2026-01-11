@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply text-red-800;
+  font-family: "Blue";
+  background-image: url('../../public/images/moviescreen.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+h1{
+    @apply text-4xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-xl font-bold my-4;
+}
+h3 {
+  @apply text-lg font-bold my-4;
+}
+ul {
+  @apply my-10;
+}
+p {
+  @apply my-2;
+}
+
+/* header */
+header {
+  @apply bg-white;
+
+  nav {
+    @apply flex items-center gap-5 max-w-screen-lg px-12 py-4 mx-auto;
+  }
+  h1 {
+    @apply mr-auto;
+  }
+}
+
+login-form{
+    display: flex;
+    flrx-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.login-form .form-group{
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.login-form input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* form elements */
+form {
+  @apply max-w-screen-sm;
+}
+input, select, textarea {
+  @apply block w-full mt-2 mb-4 p-2;
+}
+
+/* custom classes */
+.container {
+  @apply max-w-screen-lg mx-auto px-12 py-8;
+}
+.card {
+  @apply bg-white rounded border border-gray-200 px-3 py-3 my-2 flex justify-between items-center;
+}
+.highlight {
+  @apply border-l-4 border-l-red-500;
+}
+.btn {
+ @apply inline-block rounded-md px-4 py-2 text-sm font-medium no-underline;
+  @apply text-gray-800 bg-gray-200 hover:bg-gray-300;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+
+.btn-primary {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+/* Optional: block/full width button */
+.btn-full {
+  @apply w-full;
+}
+
+/* Optional: small / large */
+.btn-small { @apply px-3 py-1 text-xs; }
+.btn-large { @apply px-5 py-3 text-base; }
+
+/* Form container */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: light-blue;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Group spacing */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+/* Register link style */
+.link-btn {
+    background-color: #6c757d;
+}
+
+/* Hover effect */
+.btn:hover {
+    opacity: 0.9;
+}
+
+.movie-screen {
+  @apply mx-auto my-6 rounded shadow max-w-full h-auto w-96;
+}
+
+.nav-right {
+  @apply flex justify-center gap-4;
+}
+
